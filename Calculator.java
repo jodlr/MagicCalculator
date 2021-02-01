@@ -64,13 +64,23 @@ class MagicCalc extends Calculator {
     }
 
 
-    public long factorial(int f) {
+
+
+    /*public long factorial(int f) {
         long fact = 1;
         for (int i = 2; i <= f; i++) {
             fact = fact * i;
         }
         return fact;
+    } */
+
+    public long factorial(int f) {
+       long result;
+        if (f==1) return 1;
+            result = factorial(f-1) *f;
+            return result;
     }
+
 
 }
 
